@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tarjetas">
+
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Añadir tarjeta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-input type="text" placeholder="Nombre de la tarjeta" #name></ion-input>
+      <ion-input type="text" placeholder="Numero de la tarjeta" #number></ion-input>
+      <ion-input type="text" placeholder="Fecha de expiracion" #date></ion-input>
+      <ion-input type="text" placeholder="Propietario" #propietary></ion-input>
+      <ion-input type="text" placeholder="Numero IBAN" #iban></ion-input>
+      <ion-input type="text" placeholder="Codigo CVC" #cvc></ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Emisor</ion-label>
+      <ion-select #type value="visa" okText="Aceptar" cancelText="cerrar">
+        <ion-select-option value="visa">Visa</ion-select-option>
+        <ion-select-option value="mastercard">Mastercard</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Color</ion-label>
+      <ion-select #color value="rojo" okText="Aceptar" cancelText="cerrar">
+        <ion-select-option value="rojo">Rojo</ion-select-option>
+        <ion-select-option value="azul">Azul</ion-select-option>
+        <ion-select-option value="negro">Negro</ion-select-option>
+        <ion-select-option value="amarillo">Amarillo</ion-select-option>
+        <ion-select-option value="blanco">Blanco</ion-select-option>
+
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+
+<ion-button expand="block" color="success" size="large"
+  (click)="saveNewCard(name,number,date,propietary,iban,cvc,type,color)">
+  <ion-icon size="large" name="checkmark-circle-outline" class="mr-3"></ion-icon>Listo
+</ion-button>

@@ -1,0 +1,42 @@
+[
+    {
+      "id": "1",
+      "name": "Tarjeta principal",
+      "number": "4747 4548 4325 3662",
+      "date": "08/22",
+      "propietary": "Victor Porras G",
+      "iban": "CR1236547412547896",
+      "cvc": "456",
+      "type": "../../assets/visa.png"
+    },
+    {
+      "id": "2",
+      "name": "Tarjeta de emergencias",
+      "number": "4747 4548 4325 3662",
+      "date": "08/22",
+      "propietary": "Daniel Rojas G",
+      "iban": "CR1236547412547896",
+      "cvc": "456",
+      "type": "../../assets/mastercard.png"
+    },
+    {
+      "id": "3",
+      "name": "Tarjeta de emergencias",
+      "number": "4747 4548 4325 3662",
+      "date": "08/22",
+      "propietary": "Daniel Rojas G",
+      "iban": "CR1236547412547896",
+      "cvc": "456",
+      "type": "../../assets/mastercard.png"
+    },
+    {
+      "id": "4",
+      "name": "Tarjeta de emergencias",
+      "number": "4747 4548 4325 3662",
+      "date": "08/22",
+      "propietary": "Daniel Rojas G",
+      "iban": "CR1236547412547896",
+      "cvc": "456",
+      "type": "../../assets/mastercard.png"
+    }
+]

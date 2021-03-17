@@ -1,0 +1,52 @@
+.debitCard{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 330px;
+    height: 200px;
+    border-radius: 10px;
+    color: white;
+    font-size: 19px;
+}
+
+
+
+.cardType{
+    height: 45px;
+    width: 45px;
+    position: relative ;
+    bottom: 18px;
+    
+}
+
+.cardChip{
+    width: 60px;
+    height: 38px;
+}
+
+.date{
+    font-size: 15px;
+    position: relative;
+    bottom: 16px;
+}
+
+.name{
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.number{
+    font-weight: 500;
+    font-size: 28px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.icons{
+    font-size: 22px;
+}
+
+.infoTitle{
+    font-size: 20px;
+}

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Tarjetas</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-text  *ngIf="cards.length == 0" class="text-center aviso">
+    <h4>Agrega una tarjeta</h4>
+  </ion-text>
+  <ion-img *ngIf="cards.length == 0" src="../../assets/arrow.webp" class="arrow"></ion-img>
+
+  <ion-list>
+    <ion-item *ngFor="let card of cards" [routerLink]="['/tarjetas/', card.id]">
+      <ion-thumbnail slot="start" *ngIf="card.type == 'visa'">
+        <img src="../../assets/visa.png" class="imageList">
+      </ion-thumbnail>    
+      <ion-thumbnail slot="start" *ngIf="card.type == 'mastercard'">
+        <img src="../../assets/mastercard.png" class="imageList">
+      </ion-thumbnail>     
+      <ion-label>
+        {{card.name}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+ 
+
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button color="success" (click)="addNewCard()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>
